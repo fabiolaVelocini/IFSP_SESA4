@@ -1,0 +1,23 @@
+<div class = "page">
+  <h1>Criar usuário</h1>
+  <form [formGroup]="userForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Nome de usuário</mat-label>
+      <input matInput formControlName="username">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>E-mail</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+  </form>
+  <button
+    mat-flat-button
+    (click)="createUser()"
+  >
+    Adicionar usuário
+  </button>
+</div>

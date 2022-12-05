@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS sesa4;
+
+CREATE DATABASE IF NOT EXISTS sesa4;
+
+USE sesa4;
+
+CREATE TABLE IF NOT EXISTS users (
+    user_id INTEGER AUTO_INCREMENT,
+    username VARCHAR(30) NOT NULL UNIQUE, 
+	name VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL UNIQUE,
+    password VARCHAR(256),
+    password_token VARCHAR(512),
+    PRIMARY KEY (user_id)
+);
+
+SELECT * FROM users;
+

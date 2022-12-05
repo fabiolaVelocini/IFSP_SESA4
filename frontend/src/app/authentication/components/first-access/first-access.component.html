@@ -1,0 +1,38 @@
+<div class="page">
+  <div class="container">
+    <div class="title">
+      <h1>Definir senha</h1>
+    </div>
+    <div class="content">
+      <form [formGroup]="loginForm">
+        <mat-form-field appearance="outline">
+          <mat-label>Senha</mat-label>
+          <input
+            matInput
+            [type]="hidePassword ? 'password' : 'text'"
+            formControlName="password"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Confirmar senha</mat-label>
+          <input
+            matInput
+            [type]="hideConfirmPassword ? 'password' : 'text'"
+            formControlName="confirmPassword"
+          />
+        </mat-form-field>
+      </form>
+      <button
+        mat-flat-button
+        (click)="doFirstAccess()"
+        class="login-button"
+      >
+        Cadastrar
+      </button>
+    </div>
+    <div class="footer">
+    </div>
+
+  </div>
+</div>
+

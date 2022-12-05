@@ -1,0 +1,33 @@
+.page {
+  padding-inline: 20px;
+}
+
+h1 {
+  color: #43A047;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-form-field {
+  width: 50%;
+}
+
+button {
+  background-color: #43A047;
+  color: #FFFFFF;
+  height: 40px;
+  margin-top: 15px;
+  transition: 1s;
+  width: 160px;
+}
+
+button:hover {
+  background-color: #1B5E20;
+}

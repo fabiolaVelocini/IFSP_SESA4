@@ -1,0 +1,82 @@
+.page {
+  background-image: url(../../../../assets/ifsp_biblioteca.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  height: 55vh;
+  width: 25%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #43A047;
+  box-sizing: border-box;
+  height: 12.5vh;
+}
+
+h1 {
+  color: #FFFFFF;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  height: 37.5vh;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+mat-form-field {
+  width: 85%;
+}
+
+.hide-button {
+  background-color: transparent;
+  border: none;
+}
+
+.login-button {
+  background-color: #43A047;
+  color: #FFFFFF;
+  height: 40px;
+  margin-top: 15px;
+  transition: 1s;
+  width: 85%;
+}
+
+.login-button:hover {
+  background-color: #1B5E20;
+}
+
+.footer {
+  background-color: #43A047;
+  height: 10vh;
+}

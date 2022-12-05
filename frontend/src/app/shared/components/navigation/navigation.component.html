@@ -1,0 +1,29 @@
+<mat-toolbar class="toolbar">
+  <span>Projeto de SESA4</span>
+  <button
+    mat-flat-button
+    (click)="logout()"
+    class="exit-button"
+  >
+    <mat-icon>exit_to_app</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="buttons">
+  <button
+    mat-flat-button
+    routerLink="/user/new"
+    class="navigation-button"
+  >
+    Criar usuário
+  </button>
+  <button
+    mat-flat-button
+    routerLink="/email"
+    class="navigation-button"
+  >
+    Enviar e-mail
+  </button>
+</div>
+<router-outlet></router-outlet>
+<mat-toolbar class="footer">
+</mat-toolbar>

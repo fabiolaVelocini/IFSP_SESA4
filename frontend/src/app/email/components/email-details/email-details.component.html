@@ -1,0 +1,28 @@
+<div class = "page">
+  <h1>Enviar e-mail</h1>
+  <form [formGroup]="emailForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Para</mat-label>
+      <input matInput formControlName="toEmail">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Assunto</mat-label>
+      <input matInput formControlName="subject">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="body">
+      <mat-label>Corpo</mat-label>
+      <textarea
+        matInput
+        formControlName="body"
+        rows="5"
+      >
+      </textarea>
+    </mat-form-field>
+  </form>
+  <button
+    mat-flat-button
+    (click)="sendEmail()"
+  >
+    Enviar e-mail
+  </button>
+</div>
